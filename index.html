@@ -11,6 +11,86 @@
 
 <body>
 
+    <h1 id="title">EPCOT Survey</h1>
+    <p id="description">Fill out the form below to let us know what your favorite attractions and restaurants are at
+        EPCOT.</p>
+
+    <form action="/" id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <label for="age" id="number-label">Age:</label>
+        <input type="number" id="number" name="age" min="1" max="110" placeholder="Enter your age">
+
+
+        <fieldset>
+            <p>What is your favorite area of EPCOT?</p>
+            <input type="radio" name="fav-area" id="future-world">
+            <label for="future-world">Future World</label>
+            <input type="radio" name="fav-area" id="world-showcase">
+            <label for="world-showcase">World Showcase</label>
+        </fieldset>
+
+
+        <p>What is your favorite World Showcase Pavilion?</p>
+        <select name="fav-pavilion" id="dropdown">
+            <option value="">-- Please select a pavilion --</option>
+            <option value="mexico">Mexico</option>
+            <option value="norway">Norway</option>
+            <option value="china">China</option>
+            <option value="germany">Germany</option>
+            <option value="italy">Italy</option>
+            <option value="usa">The American Adventure</option>
+            <option value="japan">Japan</option>
+            <option value="morocco">Morocco</option>
+            <option value="france">France</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+        </select>
+
+
+        <fieldset>
+            <p>What are your favorite attractions? (select as many as you want)</p>
+            <div>
+                <p>Future World:</p>
+                <input type="checkbox" id="space-earth" name="space-earth">
+                <label for="sp-earth">Spaceship Earth</label>
+                <input type="checkbox" id="journey-imagination" name="journey-imagination">
+                <label for="journey-imagination">Journey into Imagination with Figment</label>
+                <input type="checkbox" id="mission-space" name="mission-space">
+                <label for="mission-space">Mission: Space</label>
+                <input type="checkbox" id="test-track" name="test-track">
+                <label for="test-track">Test Track</label>
+                <input type="checkbox" id="living-land" name="living-land">
+                <label for="living-land">Living with the Land</label>
+                <input type="checkbox" id="soarin" name="soarin">
+                <label for="soarin">Soarin' around the World</label>
+                <input type="checkbox" id="turtle-talk" name="turtle-talk">
+                <label for="turtle-talk">Turtle Talk with Crush</label>
+            </div>
+            <div>
+                <p>World Showcase:</p>
+                <input type="checkbox" id="gran-fiesta" name="gran-fiesta">
+                <label for="gran-fiesta">Gran Fiesta Tour</label>
+                <input type="checkbox" id="frozen" name="frozen">
+                <label for="frozen">Frozen Ever After</label>
+                <input type="checkbox" id="reflections-china" name="reflections-china">
+                <label for="reflections-china">Reflections of China</label>
+                <input type="checkbox" id="usa-adventure" name="usa-adventure">
+                <label for="usa-adventure">The American Adventure</label>
+                <input type="checkbox" id="impressions-france" name="impressions-france">
+                <label for="impressions-france">Impressions de France</label>
+                <input type="checkbox" id="canada" name="canada">
+                <label for="canada">Canada: Far and Wide</label>
+            </div>
+        </fieldset>
+
+        <p>If you would like to add any more information, you can do so below:</p>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button type="button" id="submit">Submit</button>
+    </form>
+
 </body>
 
 </html>
