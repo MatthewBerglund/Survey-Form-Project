@@ -1,0 +1,84 @@
+html {
+    font-family: sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-content-container {
+    width: 100vw;
+    height: auto;
+    padding: 15px;
+    border: 1px solid blue;
+}
+
+.form-container {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 30px 0;
+}
+
+/* --- USER INFO SECTION STYLES ---*/
+.user-info {
+    background-color: tomato;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-info label {
+    display: block;
+}
+
+
+/* --- "FAVORITE AREA" SECTION STYLES --- */
+.fav-area-radio {
+    background-color: lightseagreen;
+    height: 65px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+}
+
+.fav-area-option {
+    margin-right: 20px;
+}
+
+
+/* --- FAVORITE PAVILION SECTION STYLES --- */
+.fav-pavilion-ws {
+    background-color: orange;
+    height: 60px;
+}
+
+.pavilion-select {
+    margin-top: 10px;
+}
+
+
+/* --- "FAVORITE ATTRACTIONS" SECTION STYLES --- */
+.fav-attractions {
+    background-color: rgb(194, 127, 194);
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px 0;
+    padding-top: 20px;
+}
+
+
+
+
+
+.user-comment {
+    background-color: yellow;
+}
+
