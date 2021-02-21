@@ -8,26 +8,23 @@ html {
     box-sizing: border-box;
 }
 
-
-/* --- BODY, BACKGROUND, OVERLAY STYLES --- */
+/* --- BACKGROUND STYLES --- */
 body {
     background-image: url("/media/spaceship-earth_bwjpg.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: center, center;
-    background-size: cover, cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .background-overlay {
     background: linear-gradient(rgba(0, 0, 133, 0.5), rgba(204, 112, 204, 0.514), rgba(255, 166, 0, 0.507));
-    width: 100%;
-    height: 100%;
 }
 
 .main-content-container {
-    margin: 0 auto;
+    color: white;
     min-width: 375px;
     max-width: 576px;
-    color: white;
+    margin: 0 auto;
     padding: 100px 0;
 }
 
@@ -39,11 +36,11 @@ body {
 
 h1 {
     font-family: 'Paytone One', sans-serif;
-    margin-bottom: 20px;
-    font-size: 4rem;
     color: white;
+    font-size: 4rem;
     letter-spacing: 3px;
     text-shadow: -2px 2px 0 #6affa8;
+    margin-bottom: 20px;
 }
 
 .form-description {
@@ -52,12 +49,12 @@ h1 {
 
 /* --- GENERAL FORM STYLES --- */
 .form-container {
-    background-color: rgba(0, 0, 0, 0.712);
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);
     grid-gap: 30px 0;
+    background-color: rgba(0, 0, 0, 0.712);
+    width: 100%;
     padding: 15px;
     border-radius: 7px;
 }
@@ -73,7 +70,6 @@ p {
 
 /* --- USER INFO SECTION STYLES ---*/
 .user-info {
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -86,8 +82,7 @@ p {
 .user-info input {
     width: 100%;
     padding: .6em 1em;
-    margin-top: 10px;
-    margin-bottom: 25px;
+    margin: 10px 0 25px 0;
     border: 4px solid transparent;
     border-radius: 4px;
     outline: none;
@@ -104,11 +99,11 @@ p {
 
 
 /* --- "FAVORITE AREA" SECTION STYLES --- */
-.fav-area-radio {
-    height: 65px;
+.fav-area-radio { 
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    height: 65px;
     border: none;
 }
 
@@ -123,9 +118,8 @@ p {
 
 /* --- "FAVORITE PAVILION" SECTION STYLES --- */
 .pavilion-select {
-    margin-top: 10px;
-    margin-bottom: 10px;
     width: 100%;
+    margin: 10px 0;
     padding: .6em 1em;
     border: 4px solid transparent;
     border-radius: 4px;
@@ -140,11 +134,11 @@ p {
 
 /* --- "FAVORITE ATTRACTIONS" SECTION STYLES --- */
 .fav-attractions {
-    border: none;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-gap: 15px 0;
+    border: none;
 }
 
 .fav-attractions p {
@@ -169,11 +163,9 @@ p {
 
 /* --- USER COMMENT SECTION STYLES --- */
 .user-comment textarea {
-    font-family: sans-serif;
-    font-size: 1rem;
     line-height: 1.4;
-    min-width: 100%;
-    min-height: 100px;
+    width: 100%;
+    min-height: 150px;
     resize: vertical;
     margin-top: 8px;
     padding: .6em 1em;
@@ -191,7 +183,6 @@ button {
     background-color: #6affa8;
     border: 4px solid transparent;
     border-radius: 4px;
-    font-size: 1rem;
     font-weight: bold;
     padding: .6em 0;
     outline: none;
@@ -207,6 +198,8 @@ button:focus {
     border: 4px solid #4eb87a;
 }
 
+
+/* --- STYLES FOR ALL SCREENS 576px AND ABOVE --- */
 @media (min-width: 576px) {
     
     .fav-attractions {
